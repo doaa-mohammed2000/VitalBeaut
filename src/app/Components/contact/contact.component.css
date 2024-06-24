@@ -1,0 +1,200 @@
+.background-container {
+    position: relative;
+    background-image: url('/assets/contactImages/download.jpg');
+    /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 1rem;
+    height: 300px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin-bottom: 40px;
+    margin-top: 170px;
+    border-radius: 10px;
+}
+
+.card {
+    flex: 1;
+    max-width: 30%;
+    border: 1px solid #ad9a9a;
+    border-radius: 10px;
+    padding-top: 20px;
+    height: 120px;
+    padding-left: 20px;
+    margin: 1rem;
+    background: #ddbce2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #b56dc0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .icon-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #b807d3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: white;
+
+}
+
+.card h5,
+.card p {
+    margin-bottom: 10px;
+    color: #80358b;
+    padding-left: 50px;
+    padding-top: 2px;
+
+}
+
+@media (max-width: 1200px) {
+    .card {
+        flex: 1 1 30%;
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex: 1 1 80%;
+        max-width: 80%;
+    }
+}
+
+.contact-form {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    border: 1px solid #e2d1ca;
+    border-radius: 20px;
+    background: #ddbce2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-form .form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-form .form-group {
+    flex: 1;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #e2d1ca;
+    border-radius: 20px;
+    background: #ddbce2;
+}
+
+.contact-form button {
+    width: 25%;
+    border-radius: 20px;
+    padding: 0.75rem;
+    background: #cd59df;
+    border: none;
+    color: #f8e2d7;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form .alert {
+    margin-top: 0.5rem;
+}
+
+.contact-form p {
+    color: red;
+}
+
+.success-message {
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.car {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 300px;
+    background-image: url('/assets/contactImages/thr.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-left: 1rem;
+    margin-top: 70px;
+    margin-bottom: 200px;
+}
+
+.cardscontainer {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.card1 {
+    width: 310px;
+    background: #ddbce2;
+    border: 1px solid #ad9a9a;
+    border-radius: 30px;
+    text-align: center;
+    height: 160px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.con {
+    text-align: center;
+    color: #7f0392;
+    font-style: italic;
+    margin-top: 100px;
+}

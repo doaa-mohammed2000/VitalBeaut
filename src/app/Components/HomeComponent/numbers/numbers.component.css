@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+VIC:wght@100..400&family=Playwrite+NZ:wght@100..400&family=Shadows+Into+Light&display=swap');
+
+.all-numbers {
+    padding: 20px;
+    color: #CC76DA;
+    /* height: 300px; */
+    align-items:center;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.number h1,
+.number p {
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container h1 {
+    margin: 0 70px;
+}
+
+.header-container p {
+    font-family: "Overpass", sans-serif;
+}
+
+.line {
+    width: 1px;
+    height: 120px;
+    background-color: #CC76DA;
+    /* margin-top: 50px; */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto; /* Adjust height as per design */
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-container h1 {
+        margin: 20px 0;
+    }
+
+    .line {
+        display: none; /* Hide the vertical line on smaller screens */
+    }
+}

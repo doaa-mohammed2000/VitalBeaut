@@ -1,0 +1,29 @@
+<div class="all-product-header">
+    <div class="product-header">
+        <h1>Our Products</h1>
+    </div>
+
+    <div class="image-container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4"
+                *ngFor="let product of products| paginate: { itemsPerPage: itemsPerPage, currentPage: p }">
+                <div class="card">
+                    <img [src]="'http://localhost:5261/Resources/' + product.image" class="card-img-top"
+                        alt="{{product.name}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">{{ product.description }}</p>
+                        <a href="ProductDetails" class="details-button">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ngx-pagination">
+        <pagination-controls (pageChange)="p = $event" class="custom-pagination"></pagination-controls>
+    </div>
+    
+
+</div>
