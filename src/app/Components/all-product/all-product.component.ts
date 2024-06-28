@@ -15,7 +15,6 @@ export class AllProductComponent implements OnInit {
   itemsPerPage: number = 2;
   totalProductNumber: any;
 
-
   constructor(private allproducts: GetallProductsService) { }
 
   ngOnInit() {

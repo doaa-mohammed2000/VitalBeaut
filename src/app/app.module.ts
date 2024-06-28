@@ -7,6 +7,7 @@ import { HomeSliderComponent } from './Components/HomeComponent/home-slider/home
 import { HttpClientModule } from '@angular/common/http';
 import { AllProductComponent } from './Components/all-product/all-product.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { HomeBrandsComponent } from './Components/HomeComponent/home-brands/home-brands.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     HomeSliderComponent,
     AllProductComponent,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    HomeBrandsComponent
   ],
   imports: [
     BrowserModule,   

@@ -1,4 +1,3 @@
-
 .bg-color {
     background: #fff;
     background-size: cover;
@@ -13,14 +12,14 @@
     margin: 0 auto;
 }
 
-.title {
+.all-our-team {
     margin-bottom: 50px;
     padding-bottom: 40px;
     text-align: center;
     position: relative;
 }
 
-.title::before {
+.all-our-team::before {
     content: '';
     width: 200px;
     height: 3px;
@@ -32,7 +31,7 @@
     transform: translateX(-50%);
 }
 
-.title::after {
+.all-our-team::after {
     content: '\f005';
     font-family: FontAwesome;
     color: #CC76DA;
@@ -48,14 +47,14 @@
     font-size: 16px;
 }
 
-.title p {
+.all-our-team p {
     color: #5d5d5d;
     font-style: italic;
     font-weight: 200;
     margin: 0;
 }
 
-.title h1 {
+.all-our-team h1 {
     font-size: 40px;
     color: #CC76DA;
     font-weight: 500;
@@ -68,66 +67,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: none;
+    cursor: pointer;
 }
 
 .card-main {
     position: relative;
     overflow: hidden;
-    /* Ensure any overflow is hidden */
+    width: 200px;
+    height: 300px;
 
-}
-
-.discount {
-    position: relative;
-    background: #fa0;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-    display: block;
-    text-transform: uppercase;
-    height: 30px;
-    width: 70px;
-    border-radius: 0 15px 15px 0;
-    line-height: 30px;
-    font-style: italic;
-    left: -9px;
-    top: 30px;
-}
-
-.discount::after {
-    border-top: 6px solid #c80;
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    border-left: 8px solid transparent;
-    border-right: 0px solid transparent;
-    left: 0;
-}
-
-.label {
-    position: absolute;
-    bottom: 190px;
-    left: 10px;
-    font-size: 10px;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 2;
-    line-height: 100%;
-    color: #fff;
-    border-radius: 3px;
-    padding: 5px 8px;
-}
-
-.label-green {
-    background: #5cb85c;
 }
 
 .image {
-    height: 300px;
-    /* Adjust the height as needed */
+    height: 400px;
     width: 100%;
     overflow: hidden;
-    /* Ensure any overflow is hidden */
+    transition: border-radius 0.5s ease; 
 }
 
 .image img {
@@ -135,19 +91,23 @@
     height: 100%;
     object-fit: cover;
 }
-
-.cart-line {
-    height: 2px;
-    background: #f1f1f1;
+.image:hover
+{
+border-radius: 60% 60% 0 0 ;
 }
+.content a:hover {
+    color: #fa0;
+    text-decoration: none;
+}
+
 
 .cart-item {
     text-align: center;
     line-height: 45px;
     background: #e2c4e6;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     position: relative;
-    top: -30px;
+    top: -1px;
     opacity: 0;
 }
 
@@ -166,7 +126,7 @@
     content: '';
     width: 1px;
     height: 18px;
-    background: #dfcbe2;
+    background: #ac39c0;
     position: absolute;
     left: -2px;
     top: 10px;
@@ -178,42 +138,28 @@
 
 .cart-item ul li a {
     padding: 0 18px;
+    color: #fff;
+    text-decoration: none;
+}
+.cart-item ul li
+{
+    color: #fff;  
+}
+.cart-item ul li a:hover{
     color: #c94edc;
+    text-decoration: underline;
+}
+.member-container1,
+.member-container3 {
+    background-color: #d6a5de;
 }
 
-.cart-item ul li a:hover {
-    color: #fa0;
+.member-container2,
+.member-container4 {
+    background-color: #e4cbe8;
 }
 
-.product-container {
-    position: absolute;
-    right: -40px;
-    top: 10px;
-    z-index: 4;
-    transition: 0.6s;
-    opacity: 0;
-}
-
-.p {
-    border: 1px solid rgb(233, 233, 233);
-    border-radius: 2px;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-}
-
-.p img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-}
-
-.p img:hover {
-    opacity: 1;
-}
-
-.card:hover .product-container {
+.card:hover .member-container {
     opacity: 1;
     right: 10px;
 }
@@ -221,7 +167,11 @@
 .card:hover .cart-item {
     opacity: 1;
     top: -2%;
-   
+
+}
+
+.card:hover .content a {
+  color:#CC76DA;
 }
 
 .content {
@@ -234,37 +184,11 @@
     color: #555;
     font-weight: 700;
     text-transform: capitalize;
-    transition: all .3s;
+    transition: all ;
     text-decoration: none;
 }
 
 .content a:hover {
-    color: #fa0;
+    color: #CC76DA;
     text-decoration: none;
-}
-
-.rating i {
-    color: #fa0;
-    line-height: 22px;
-    margin: 0 2px;
-    font-size: 12px;
-}
-
-.content p {
-    margin-bottom: 0;
-}
-
-.content .money {
-    font-size: 20px;
-    color: #fa0;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.old-price {
-    font-size: 14px;
-    color: #7a7a7a;
-    text-decoration: line-through;
-    margin-left: 5px;
-    font-weight: 500;
 }
