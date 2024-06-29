@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.about-header {
+    background-color: #f5ecf7;
+    padding: 50px 0 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-text {
+    padding: 30px;
+    max-width: 600px;
+}
+
+.view-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #CC76DA;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    width:150px;
+}
+
+.view-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #CC76DA;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.view-button:hover::before {
+    transform: scaleX(1);
+}
+
+.view-button:hover {
+    color: #fff;
+    background-color: #CC76DA;
+}
+
+.about
+{
+    column-gap: 50px;
+}
+
+.about-header-header h1, .about-paragraph p, .about-list li{
+    font-family: "Cormorant Garamond", serif;
+    color:#c660d5;
+    font-weight: bold;
+    
+}
+
+
+.about-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-list ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.about-list ul li::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: #c752da;
+    animation: rotateStar 3s linear infinite;
+}
+
+@keyframes rotateStar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.about-list li
+{
+    list-style: none;
+    padding-bottom: 8px;
+}
+.row {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.col-lg-6, .col-md-12, .col-sm-12 {
+    padding: 0;
+}
+
+.about-video img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 60%;
+    max-width: 700px;
+    height: 60%;
+    top:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

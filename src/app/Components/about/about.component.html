@@ -1,1 +1,45 @@
-<p>about works!</p>
+<div class="about-header">
+    <div class="about row">
+        <div class=" col-lg-6 col-md-12 col-sm-12">
+            <div class="about-text">
+                <div class="about-header-header">
+                    <h1>Who We Are! What We Are, What We Do?</h1>
+                </div>
+                <div class="about-paragraph">
+                    <p>Lectus Magna Fringilla Urna Porttitor Rhoncus Dolor. Nam Libero Justo Laoreet Sit Amet Cursus.
+                        Blandit Volutpat Maecenas Volutpat Blandit Aliquam Etiam. Diam Volutpat Commodo Sed Egestas
+                        Egestas
+                        Fringilla Phasellus Faucibus Scelerisque. Adipiscing Elit Duis Tristique Sollicitudin Nibh Sit
+                        Amet.
+                        Convallis Aenean Et Tortor At Risus Viverra Adipiscing At. Pulvinar Pellentesque Habitant Morbi
+                        Tristique Senectus Et Netus. Tempus Imperdiet Nulla Malesuada Pellentesque Elit Eget Gravida Cum
+                        Sociis.</p>
+                </div>
+                <div class="about-list">
+                    <ul>
+                        <li>Molestie a iaculis at erat pellentesque.</li>
+                        <li>Cras fermentum odio eu feugiat pretium nibh.</li>
+                        <li>Cras ornare arcu dui vivamus arcu.</li>
+                    </ul>
+                </div>
+                <button class="view-button" (click)="navigateToShopPage()">VIEW MORE</button>
+            </div>
+        </div>
+        <div class="about-video col-lg-5 col-md-12 col-sm-12">
+            <img id="about-video" src="assets/AboutImages/vedio-image.PNG" alt="Video Thumbnail" />
+        </div>
+    </div>
+</div>
+
+<div id="videoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <video id="popup-video" src="assets/AboutImages/about-video.mp4" controls></video>
+    </div>
+</div>
+
+
+<app-numbers></app-numbers>
+<app-our-story></app-our-story>
+<app-client-reviews></app-client-reviews>
+<app-our-team></app-our-team>

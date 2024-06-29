@@ -1,1 +1,26 @@
-<p>client-reviews works!</p>
+<div class="container all-client-reviews">
+    <div class="client-reviews-header">
+        <p>TESTIMONIALS</p>
+        <h1>Client Reviews</h1>
+    </div>
+    <div class="Reviews row">
+        <div class="Reviews-image col-lg-4 col-md-4 col-sm-12">
+            <img [src]="currentReview.image" />
+        </div>
+        <div class="Reviews-text col-lg-8 col-md-8 col-sm-12">
+            <div class="review-stars">
+                <i *ngFor="let star of getStars(currentReview.stars)" class="fa" [ngClass]="star"></i>
+            </div>
+            <p class="review-text">
+                {{ currentReview.text }}
+            </p>
+            <div class="review-line"></div>
+            <p class="reviewer-name">{{ currentReview.name }}</p>
+            <p class="review-text">{{currentReview.role}}</p>
+            <div class="navigation-arrows">
+                <i class="fa fa-arrow-up up" [ngClass]="{'disabled': !hasPreviousReview()}" (click)="hasPreviousReview() && previousReview()"></i>
+                <i class="fa fa-arrow-down down" [ngClass]="{'disabled': !hasNextReview()}" (click)="hasNextReview() && nextReview()"></i>
+            </div>
+        </div>
+    </div>
+</div>

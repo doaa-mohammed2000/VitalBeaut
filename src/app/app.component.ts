@@ -10,7 +10,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AllProductComponent } from './Components/all-product/all-product.component';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { HomeBrandsComponent } from './Components/HomeComponent/home-brands/home-brands.component';
+import { HomeBrandsComponent } from './Components/home-brands/home-brands.component';
 
 @Component({
   selector: 'app-root',
